@@ -46,13 +46,13 @@ if __name__ == '__main__':
 
         if updated:
 
-            print("Updated")
+            print("UPDATED")
 
             updated = False
             wanted = getPayload()
 
             with open("wanted.txt", 'w') as f:
-                f.write(json.dump(wanted))
+                f.write(json.dumps(wanted))
 
         payload = get_plate_information(license_plate_publisher())
 

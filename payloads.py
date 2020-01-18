@@ -16,10 +16,8 @@ def sendPayload(payload):
 def getPayload():
     url="https://licenseplatevalidator.azurewebsites.net/api/lpr/wantedplates"
 
-    #r = requests.get(url, auth=auth)
+    r = requests.get(url, auth=auth)
 
-    #print(r.status_code, r.reason)
+    print(r.status_code, r.reason)
 
-    #return json.loads(r.text)
-
-    return json.loads('["005AFA","006ZCC","041PSJ","048MQJ746","060BJQ","072WGT","075VJN","106WER","150HZN","170YYT","490RVQ","850WPS"]')
+    return json.loads(r.text)
