@@ -3,28 +3,18 @@ import time
 import operator
 from concurrent.futures import thread
 
+from connector import get_connection
 from license_plate_publisher import *
 from notification_publisher import *
 from payloads import *
 import _thread
 import json
 
-import psycopg2
-
-def get_connection():
-    conn = psycopg2.connect(database="genetec",
-                            user="bq",
-                            password="passwordBQ567",
-                            host="146.148.37.192",
-                            port="5432")
-    return conn
-
 
 def init_database(conn):
     cur = conn.cursor()
     cur.execute("CREATE TABLE IF NOT EXISTS plates(id int PRIMARY KEY, plates_array TEXT);")
     conn.commit()
-
 
 
 dbc = get_connection()
