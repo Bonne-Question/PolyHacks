@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="90d80261-820c-4fe2-8de6-c5a03250c6bd" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/notification_publisher.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/license_plate_publisher.py" beforeDir="false" afterPath="$PROJECT_DIR$/license_plate_publisher.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/notification_publisher.py" beforeDir="false" afterPath="$PROJECT_DIR$/notification_publisher.py" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -18,9 +15,9 @@
   </component>
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/PolyHacks$main.coverage" NAME="main Coverage Results" MODIFIED="1579375898647" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/PolyHacks$main__1_.coverage" NAME="main (1) Coverage Results" MODIFIED="1579376247995" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/PolyHacks$main__1_.coverage" NAME="main (1) Coverage Results" MODIFIED="1579377555103" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/PolyHacks$dataSource.coverage" NAME="dataSource Coverage Results" MODIFIED="1579372503746" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/PolyHacks$notification_publisher.coverage" NAME="notification_publisher Coverage Results" MODIFIED="1579376314199" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/PolyHacks$notification_publisher.coverage" NAME="notification_publisher Coverage Results" MODIFIED="1579377366423" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
@@ -39,8 +36,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/notification_publisher.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="350">
-              <caret line="14" column="4" selection-start-line="14" selection-start-column="4" selection-end-line="14" selection-end-column="4" />
+            <state relative-caret-position="175">
+              <caret line="16" column="4" selection-start-line="16" selection-start-column="4" selection-end-line="16" selection-end-column="4" />
               <folding>
                 <element signature="e#0#46#0" expanded="true" />
               </folding>
@@ -142,7 +139,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.notification_publisher">
+  <component name="RunManager" selected="Python.main (1)">
     <configuration name="main (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="PolyHacks" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -211,8 +208,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.notification_publisher" />
         <item itemvalue="Python.main (1)" />
+        <item itemvalue="Python.notification_publisher" />
         <item itemvalue="Python.main" />
       </list>
     </recent_temporary>
@@ -229,18 +226,18 @@
       <updated>1579366411773</updated>
       <workItem from="1579366415750" duration="834000" />
       <workItem from="1579367605287" duration="3852000" />
-      <workItem from="1579372639168" duration="3411000" />
+      <workItem from="1579372639168" duration="4616000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="8170000" />
+    <option name="totallyTimeSpent" value="9375000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1818792" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1818792" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info active="true" id="DB Browser" order="2" visible="true" weight="0.23489933" />
       <window_info id="Project Explorer" order="3" />
@@ -248,8 +245,8 @@
       <window_info id="Favorites" order="5" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.28186968" />
-      <window_info anchor="bottom" id="Debug" order="3" visible="true" weight="0.21246459" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.29886687" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.21246459" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -258,7 +255,7 @@
       <window_info anchor="bottom" id="GraphQL" order="9" />
       <window_info anchor="bottom" id="DB Execution Console" order="10" />
       <window_info anchor="bottom" id="Database Changes" order="11" />
-      <window_info anchor="bottom" id="Terminal" order="12" weight="0.3654391" />
+      <window_info anchor="bottom" id="Terminal" order="12" weight="0.3555241" />
       <window_info anchor="bottom" id="Event Log" order="13" side_tool="true" />
       <window_info anchor="bottom" id="Console" order="14" />
       <window_info anchor="bottom" id="Python Console" order="15" weight="0.3286119" />
@@ -341,8 +338,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/notification_publisher.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="350">
-          <caret line="14" column="4" selection-start-line="14" selection-start-column="4" selection-end-line="14" selection-end-column="4" />
+        <state relative-caret-position="175">
+          <caret line="16" column="4" selection-start-line="16" selection-start-column="4" selection-end-line="16" selection-end-column="4" />
           <folding>
             <element signature="e#0#46#0" expanded="true" />
           </folding>
