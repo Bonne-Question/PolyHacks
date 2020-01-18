@@ -15,3 +15,5 @@ def notification_publisher():
                                                                    peek_lock=False)
     return msg.body
 
+
+notification_publisher()

@@ -13,7 +13,11 @@ def license_plate_publisher():
     msg = bus_service_plate_publisher.receive_subscription_message('licenseplateread',
                                                                    'r6GKjeC7ZaLkC46B',
                                                                    peek_lock=True)
-    return json.loads(msg.body.decode())
+    if msg.body is not None:
+
+        return json.loads(msg.body.decode())
+
+    return {}
 
 
 def get_plate_information(plate):
@@ -24,7 +28,6 @@ def get_plate_information(plate):
         "Latitude": plate["Latitude"],
         "Longitude": plate["Longitude"]
     }
-
 
 
 
