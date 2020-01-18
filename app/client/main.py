@@ -1,14 +1,11 @@
 import threading
 import time
-import operator
-from concurrent.futures import thread
+from app.connector import get_connection
+from app.license_plate_publisher import *
+from app.payloads import *
 
-from connector import get_connection
-from license_plate_publisher import *
-from notification_publisher import *
-from payloads import *
-import _thread
 import json
+
 
 wanted=[]
 
@@ -23,12 +20,10 @@ class Thread_notification(threading.Thread):
 
     def run(self):
         global wanted
-        # TODO get the data from the DB and assign to wanted.
         db_cur.execute("SELECT id, plates_array FROM public.plates ORDER BY id DESC LIMIT 1;")
         wanted = json.loads(db_cur.fetchone()[1])
         print(wanted, flush=True)
         time.sleep(10)
-
 
 
 if __name__ == '__main__':

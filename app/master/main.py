@@ -1,14 +1,7 @@
 import threading
-import time
-import operator
-from concurrent.futures import thread
-
-from connector import get_connection
-from license_plate_publisher import *
-from notification_publisher import *
-from payloads import *
-import _thread
-import json
+from app.connector import get_connection
+from app.notification_publisher import *
+from app.payloads import *
 
 
 def init_database(conn):
@@ -37,7 +30,7 @@ class Thread_notification(threading.Thread):
         global updated
 
         while True:
-            print("redo loop", flush=True)
+            print("redo loop for ", flush=True)
             msg = notification_publisher()
 
             if msg is not None:
