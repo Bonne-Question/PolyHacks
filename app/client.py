@@ -1,8 +1,8 @@
 import threading
 import time
-from app.connector import get_connection
-from app.license_plate_publisher import *
-from app.payloads import *
+from connector import get_connection
+from license_plate_publisher import *
+from payloads import *
 
 import json
 
