@@ -18,7 +18,6 @@ wanted=[]
 
 updated=False # Updated
 
-
 class Thread_notification(threading.Thread):
     def __init__(self, name):
         threading.Thread.__init__(self)
@@ -30,7 +29,7 @@ class Thread_notification(threading.Thread):
         global updated
 
         while True:
-            print("redo loop for ", flush=True)
+            print("redo loop for notification_publisher", flush=True)
             msg = notification_publisher()
 
             if msg is not None:
@@ -55,5 +54,5 @@ if __name__ == '__main__':
             wanted = getPayload()
 
             db_cur.insert()
-            db_cur.execute("INSERT INTO plates(plates_array) VALUES ("+wanted+");")
+            db_cur.execute("INSERT INTO plates(plates_array) VALUES (%s);", [wanted])
             dbc.commit()
