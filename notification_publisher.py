@@ -4,6 +4,8 @@ import json
 
 def notification_publisher():
 
+    print("Starting")
+
     bus_service_plate_publisher = ServiceBusService(
         service_namespace="licenseplatepublisher",
         shared_access_key_name='listeneronly',
