@@ -11,27 +11,16 @@ import json
 
 wanted=[]
 
-with open("wanted.txt", 'r') as f:
-    wanted = json.loads(f.read())
-
-updated=False # Updated
-
 class Thread_notification(threading.Thread):
     def __init__(self, name):
         threading.Thread.__init__(self)
         self.name = name
 
     def run(self):
+        # TODO get the data from the DB and assign to wanted.
 
-        print("notification_publisher", flush=True)
-        global updated
+        time.sleep(10)
 
-        while True:
-            print("redo loop", flush=True)
-            msg = notification_publisher()
-
-            if msg is not None:
-                updated = True
 
 
 if __name__ == '__main__':
@@ -41,18 +30,15 @@ if __name__ == '__main__':
     print("Starting notification thread")
     tread_publisher.start()
     print("Started notification thread")
+    
+    if len(wanted) == 0:
+        print("Waiting to start")
+        while(len(wanted) == 0):
+            continue
+        print("Starting")
+
 
     while True:
-
-        if updated:
-
-            print("UPDATED")
-
-            updated = False
-            wanted = getPayload()
-
-            with open("wanted.txt", 'w') as f:
-                f.write(json.dumps(wanted))
 
         payload = get_plate_information(license_plate_publisher())
 
