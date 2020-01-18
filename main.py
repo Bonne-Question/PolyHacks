@@ -7,10 +7,14 @@ from license_plate_publisher import *
 from notification_publisher import *
 from payloads import *
 import _thread
+import json
 
 wanted=[]
-updated=False # Updated
 
+with open("wanted.txt", 'r') as f:
+    wanted = json.loads(f.read())
+
+updated=False # Updated
 
 class Thread_notification(threading.Thread):
     def __init__(self, name):
@@ -31,10 +35,11 @@ class Thread_notification(threading.Thread):
 
 
 if __name__ == '__main__':
-    print("creating thread")
     tread_publisher = Thread_notification("Publisher notifier")
 
+    print("Starting notification thread")
     tread_publisher.start()
+    print("Started notification thread")
 
     while True:
 
@@ -45,7 +50,12 @@ if __name__ == '__main__':
             updated = False
             wanted = getPayload()
 
-        # payload = get_plate_information(license_plate_publisher())
+            with open("wanted.txt", 'w') as f:
+                f.write(json.dump(wanted))
 
-        # if (payload["LicensePlate"] in wanted):
-            # sendPayload(payload)
+        payload = get_plate_information(license_plate_publisher())
+
+        print(payload)
+
+        if (payload["LicensePlate"] in wanted):
+            sendPayload(payload)

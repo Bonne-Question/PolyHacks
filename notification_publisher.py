@@ -10,9 +10,11 @@ def notification_publisher():
         shared_access_key_value='w+ifeMSBq1AQkedLCpMa8ut5c6bJzJxqHuX9Jx2XGOk='
     )
 
-    msg = bus_service_plate_publisher.receive_subscription_message('wantedplatelistupdate',
-                                                                   'JWWtexQpcUeCjnd9',
-                                                                   peek_lock=False)
+    msg = bus_service_plate_publisher.receive_subscription_message(
+        'wantedplatelistupdate',
+        'JWWtexQpcUeCjnd9',
+        peek_lock=False)
+
     return msg.body
 
 
