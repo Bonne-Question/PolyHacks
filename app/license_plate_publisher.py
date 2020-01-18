@@ -22,12 +22,16 @@ def license_plate_publisher():
 
 def get_plate_information(plate):
 
-    return {
-        "LicensePlateCaptureTime": plate["LicensePlateCaptureTime"],
-        "LicensePlate": plate["LicensePlate"],
-        "Latitude": plate["Latitude"],
-        "Longitude": plate["Longitude"]
-    }
+    print(plate)
 
+    if len(plate) > 0:
+        return {
+            "LicensePlateCaptureTime": plate["LicensePlateCaptureTime"],
+            "LicensePlate": plate["LicensePlate"],
+            "Latitude": plate["Latitude"],
+            "Longitude": plate["Longitude"]
+        }
+
+    return {}
 
 
