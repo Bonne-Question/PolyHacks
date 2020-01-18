@@ -1,5 +1,5 @@
 from license_plate_publisher import *
-from sendPayload import *
+from payloads import *
 
 
 if __name__ == '__main__':
