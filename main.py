@@ -21,18 +21,13 @@ class Thread_notification(threading.Thread):
 
         print("notification_publisher", flush=True)
         global updated
-        old_msg = {}
 
         while True:
             print("redo loop", flush=True)
             msg = notification_publisher()
 
-            print(msg)
-            if eq(msg, old_msg) and eq(msg, {}):
+            if msg is not None:
                 updated = True
-                old_msg = msg
-
-            time.sleep(10)
 
 
 if __name__ == '__main__':
@@ -41,9 +36,8 @@ if __name__ == '__main__':
 
     tread_publisher.start()
 
-
-
     while True:
+
         if updated:
 
             print("Updated")

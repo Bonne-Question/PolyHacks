@@ -13,12 +13,5 @@ def notification_publisher():
     msg = bus_service_plate_publisher.receive_subscription_message('wantedplatelistupdate',
                                                                    'JWWtexQpcUeCjnd9',
                                                                    peek_lock=False)
-
-    message = {}
-
-    if msg.body is not None:
-
-        message = msg.body
-
-    return message
+    return msg.body
 
