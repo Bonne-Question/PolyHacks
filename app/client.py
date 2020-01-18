@@ -45,9 +45,7 @@ if __name__ == '__main__':
             continue
         print("Starting")
 
-
     while True:
-
         try:
 
             payload = get_plate_information(license_plate_publisher())
