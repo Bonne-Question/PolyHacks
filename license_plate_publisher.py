@@ -1,4 +1,4 @@
-from azure.servicebus import ServiceBusService, Message, Topic, Rule, DEFAULT_RULE_NAME
+from azure.servicebus import ServiceBusService
 import json
 
 
@@ -27,4 +27,4 @@ def get_plate_information(plate):
 
 
 
-get_plate_information(license_plate_publisher())
+
