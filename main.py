@@ -35,6 +35,7 @@ class Thread_notification(threading.Thread):
 
 
 if __name__ == '__main__':
+    print("Entered main")
     tread_publisher = Thread_notification("Publisher notifier")
 
     print("Starting notification thread")

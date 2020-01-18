@@ -17,5 +17,3 @@ def notification_publisher():
 
     return msg.body
 
-
-notification_publisher()
