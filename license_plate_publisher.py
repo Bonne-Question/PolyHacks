@@ -14,3 +14,17 @@ def license_plate_publisher():
                                                                    'r6GKjeC7ZaLkC46B',
                                                                    peek_lock=True)
     return json.loads(msg.body.decode())
+
+
+def get_plate_information(plate):
+
+    return {
+        "LicensePlateCaptureTime": plate["LicensePlateCaptureTime"],
+        "LicensePlate": plate["LicensePlate"],
+        "Latitude": plate["Latitude"],
+        "Longitude": plate["Longitude"]
+    }
+
+
+
+get_plate_information(license_plate_publisher())
