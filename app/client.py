@@ -41,6 +41,8 @@ def create_uri(plate):
     image = Image.open(io.BytesIO(base64.b64decode(blob)))
     image.save(file_path)
 
+    print(uri)
+
     return uri
 
 
@@ -111,6 +113,7 @@ if __name__ == '__main__':
             payload = license_plate_publisher()
 
             if payload["LicensePlate"] in wanted:
+                print("Sending: "+payload["LicensePlate"])
 
                 sendPayload(payload, create_uri(payload))
 
