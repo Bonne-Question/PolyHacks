@@ -2,39 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="90d80261-820c-4fe2-8de6-c5a03250c6bd" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/client.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/client.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/payloads.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/payloads.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/server.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/993e86f6-3a52-11ea-8e8c-20791858c603.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/9aea67ec-3a52-11ea-ad4f-20791858c603.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/9bcceb00-3a52-11ea-8221-20791858c603.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/9dd3306e-3a52-11ea-87a4-20791858c603.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/9e814ee6-3a52-11ea-8695-20791858c603.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/a072eda6-3a52-11ea-8e67-20791858c603.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/a16f390a-3a52-11ea-b029-20791858c603.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/a38a633a-3a52-11ea-b697-20791858c603.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/a556de40-3a52-11ea-bc1f-20791858c603.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/a60f8cc0-3a52-11ea-88cd-20791858c603.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/a9470e70-3a52-11ea-a04d-20791858c603.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/abd49b92-3a52-11ea-9bf6-20791858c603.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/ad15cfe8-3a52-11ea-9efb-20791858c603.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/ae78a55c-3a52-11ea-930a-20791858c603.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/afb560ba-3a52-11ea-a77f-20791858c603.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/b06547d8-3a52-11ea-9825-20791858c603.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/b7eab438-3a52-11ea-bd8d-20791858c603.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/d079f22e-3a52-11ea-9889-20791858c603.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/d233bb2c-3a52-11ea-9c30-20791858c603.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/d3f144d2-3a52-11ea-9e98-20791858c603.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/d79eb454-3a52-11ea-b83b-20791858c603.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/de6603ca-3a52-11ea-8297-20791858c603.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/dfe9ab26-3a52-11ea-8745-20791858c603.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/dfec6a5a-3a52-11ea-8a2a-20791858c603.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/e6e8cd64-3a52-11ea-88b4-20791858c603.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/e9742ab0-3a52-11ea-9d12-20791858c603.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/f27ef69a-3a52-11ea-abee-20791858c603.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/f5046190-3a52-11ea-8ce3-20791858c603.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/f68a259c-3a52-11ea-babc-20791858c603.jpg" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -56,7 +24,7 @@
     <SUITE FILE_PATH="coverage/PolyHacks$notification_publisher.coverage" NAME="notification_publisher Coverage Results" MODIFIED="1579377366423" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/PolyHacks$server.coverage" NAME="server Coverage Results" MODIFIED="1579394476113" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/app" />
     <SUITE FILE_PATH="coverage/PolyHacks$master.coverage" NAME="master Coverage Results" MODIFIED="1579389389320" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/app/master" />
-    <SUITE FILE_PATH="coverage/PolyHacks$client.coverage" NAME="client Coverage Results" MODIFIED="1579394754946" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/app" />
+    <SUITE FILE_PATH="coverage/PolyHacks$client.coverage" NAME="client Coverage Results" MODIFIED="1579394927059" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/app" />
     <SUITE FILE_PATH="coverage/PolyHacks$celery.coverage" NAME="celery Coverage Results" MODIFIED="1579378170896" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
     <SUITE FILE_PATH="coverage/PolyHacks$dataSource.coverage" NAME="dataSource Coverage Results" MODIFIED="1579372503746" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
@@ -89,8 +57,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/client.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="252">
-              <caret line="47" column="26" selection-start-line="47" selection-start-column="26" selection-end-line="47" selection-end-column="26" />
+            <state relative-caret-position="238">
+              <caret line="66" column="43" selection-start-line="66" selection-start-column="43" selection-end-line="66" selection-end-column="43" />
               <folding>
                 <element signature="e#0#13#0" expanded="true" />
                 <element signature="e#1822#1847#0" />
@@ -384,18 +352,18 @@
       <workItem from="1579378032938" duration="390000" />
       <workItem from="1579378440784" duration="3270000" />
       <workItem from="1579383436516" duration="4520000" />
-      <workItem from="1579387980293" duration="6701000" />
+      <workItem from="1579387980293" duration="6920000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="24826000" />
+    <option name="totallyTimeSpent" value="25045000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25838926" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25838926" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info active="true" id="DB Browser" order="2" visible="true" weight="0.23489933" />
       <window_info id="Project Explorer" order="3" />
@@ -403,7 +371,7 @@
       <window_info id="Favorites" order="5" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.1855524" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.39660057" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.38526914" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -413,7 +381,7 @@
       <window_info anchor="bottom" id="GraphQL" order="9" />
       <window_info anchor="bottom" id="DB Execution Console" order="10" />
       <window_info anchor="bottom" id="Database Changes" order="11" />
-      <window_info anchor="bottom" id="Terminal" order="12" weight="0.4362606" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="12" visible="true" weight="0.30311614" />
       <window_info anchor="bottom" id="Event Log" order="13" side_tool="true" />
       <window_info anchor="bottom" id="Console" order="14" />
       <window_info anchor="bottom" id="Python Console" order="15" weight="0.04249292" />
@@ -556,8 +524,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/client.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="47" column="26" selection-start-line="47" selection-start-column="26" selection-end-line="47" selection-end-column="26" />
+        <state relative-caret-position="238">
+          <caret line="66" column="43" selection-start-line="66" selection-start-column="43" selection-end-line="66" selection-end-column="43" />
           <folding>
             <element signature="e#0#13#0" expanded="true" />
             <element signature="e#1822#1847#0" />

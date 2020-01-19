@@ -35,9 +35,9 @@ def create_uri(plate):
 
     uid = uuid.uuid1()
 
-    file_path = "../images/" + str(uid) + ".jpg"
+    file_path = "/var/www/html/" + str(uid) + ".jpg"
 
-    uri = "http://"+IPAddr+"/images/" + str(uid) + ".jpg"
+    uri = "http://"+IPAddr+"/" + str(uid) + ".jpg"
 
     image = Image.open(io.BytesIO(base64.b64decode(blob)))
     image.save(file_path)
@@ -64,7 +64,7 @@ class Thread_cleanImages(threading.Thread):
 
     def run(self):
         try:
-            clean_directory("../images/")
+            clean_directory("/var/www/html/")
             time.sleep(60)
         except Exception as e:
             print(e)
