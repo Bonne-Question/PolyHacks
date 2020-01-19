@@ -20,6 +20,7 @@ def sendPayload(plate, context_reference_image):
 
     print(r.status_code, r.reason)
 
+
 def getPayload():
     url="https://licenseplatevalidator.azurewebsites.net/api/lpr/wantedplates"
 

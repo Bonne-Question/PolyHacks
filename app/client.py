@@ -10,6 +10,8 @@ from connector import get_connection
 from license_plate_publisher import *
 from payloads import *
 
+
+import shutil
 import json
 import uuid
 import socket
@@ -26,7 +28,9 @@ db_cur = dbc.cursor()
 hostname = socket.gethostname()
 IPAddr = socket.gethostbyname(hostname)
 
+
 def create_uri(plate):
+
     blob = plate["ContextImageJpg"]
 
     uid = uuid.uuid1()
@@ -41,6 +45,30 @@ def create_uri(plate):
     return uri
 
 
+def clean_directory(folder):
+    for filename in os.listdir(folder):
+        file_path = os.path.join(folder, filename)
+        try:
+            if os.path.isfile(file_path) or os.path.islink(file_path):
+                os.unlink(file_path)
+            elif os.path.isdir(file_path):
+                shutil.rmtree(file_path)
+        except Exception as e:
+            print('Failed to delete %s. Reason: %s' % (file_path, e))
+
+
+class Thread_cleanImages(threading.Thread):
+    def __init__(self, name):
+        threading.Thread.__init__(self)
+        self.name = name
+
+    def run(self):
+        try:
+            clean_directory("../images/")
+            time.sleep(60)
+        except Exception as e:
+            print(e)
+            pass
 
 
 class Thread_notification(threading.Thread):
@@ -69,6 +97,9 @@ if __name__ == '__main__':
     print("Starting notification thread")
     tread_publisher.start()
     print("Started notification thread")
+
+    thread_cleaner = Thread_cleanImages("Image Cleaner")
+    thread_cleaner.start()
 
     if len(wanted) == 0:
         print("Waiting to start")
