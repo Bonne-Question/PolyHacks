@@ -25,7 +25,7 @@ db_cur = dbc.cursor()
 
 
 hostname = socket.gethostname()
-IPAddr = socket.gethostbyname(hostname)
+IPAddr = "35.225.60.197"#socket.gethostbyname(hostname)
 
 
 def create_uri(plate):
@@ -81,7 +81,6 @@ class Thread_notification(threading.Thread):
             global wanted
             db_cur.execute("SELECT id, plates_array FROM public.plates ORDER BY id DESC LIMIT 1;")
             wanted = json.loads(db_cur.fetchone()[1])
-            print(wanted, flush=True)
             time.sleep(10)
 
         except Exception as e:

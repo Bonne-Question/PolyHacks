@@ -20,15 +20,4 @@ def license_plate_publisher():
     return {}
 
 
-def get_plate_information(plate):
-    if len(plate) > 0:
-        return {
-            "LicensePlateCaptureTime": plate["LicensePlateCaptureTime"],
-            "LicensePlate": plate["LicensePlate"],
-            "Latitude": plate["Latitude"],
-            "Longitude": plate["Longitude"]
-        }
-
-    return {}
-
 

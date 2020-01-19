@@ -7,7 +7,9 @@ auth= HTTPBasicAuth('equipe37', 'JKPJUfnYfaxngMxb')
 
 def sendPayload(plate, context_reference_image):
     url="https://licenseplatevalidator.azurewebsites.net/api/lpr/platelocation"
+
     print("context_reference_image", context_reference_image)
+
     payload = {
         "LicensePlateCaptureTime": plate["LicensePlateCaptureTime"],
         "LicensePlate": plate["LicensePlate"],
