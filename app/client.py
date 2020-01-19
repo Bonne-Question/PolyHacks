@@ -42,6 +42,7 @@ def create_uri(plate):
 
 
 
+
 class Thread_notification(threading.Thread):
     def __init__(self, name):
         threading.Thread.__init__(self)
@@ -81,7 +82,7 @@ if __name__ == '__main__':
             payload = license_plate_publisher()
 
             print(payload)
-            create_uri(payload)
+
             if payload["LicensePlate"] in wanted:
 
                 sendPayload(payload, create_uri(payload))
