@@ -15,8 +15,8 @@ import json
 import uuid
 import socket
 
-from app.license_plate_publisher import license_plate_publisher
-from app.payloads import sendPayload
+from license_plate_publisher import license_plate_publisher
+from payloads import sendPayload
 
 wanted=[]
 
