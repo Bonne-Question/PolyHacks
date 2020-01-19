@@ -3,16 +3,16 @@ import calendar
 import os
 import threading
 import time
-from app.connector import get_connection
-from app.license_plate_publisher import *
-from app.payloads import *
+from connector import get_connection
+from license_plate_publisher import *
+from payloads import *
 
 import json
 import uuid
 import socket
 
-
-
+from app.license_plate_publisher import license_plate_publisher
+from app.payloads import sendPayload
 
 wanted=[]
 
@@ -83,6 +83,7 @@ if __name__ == '__main__':
             if payload["LicensePlate"] in wanted:
 
                 sendPayload(payload, create_uri(payload))
+
 
         except Exception as e:
             print(e)

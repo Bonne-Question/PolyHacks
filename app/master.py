@@ -1,7 +1,7 @@
 import threading
-from app.connector import get_connection
-from app.notification_publisher import *
-from app.payloads import *
+from connector import get_connection
+from notification_publisher import *
+from payloads import *
 
 
 def init_database(conn):
