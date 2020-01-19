@@ -50,9 +50,8 @@ if __name__ == '__main__':
 
             payload = get_plate_information(license_plate_publisher())
 
-            print(payload)
-
             if (payload["LicensePlate"] in wanted):
+                print("Sending: "+payload["LicensePlate"])
                 sendPayload(payload)
 
         except Exception as e:

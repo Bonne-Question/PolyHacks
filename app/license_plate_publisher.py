@@ -21,9 +21,6 @@ def license_plate_publisher():
 
 
 def get_plate_information(plate):
-
-    print(plate)
-
     if len(plate) > 0:
         return {
             "LicensePlateCaptureTime": plate["LicensePlateCaptureTime"],

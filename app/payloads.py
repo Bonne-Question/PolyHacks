@@ -11,7 +11,6 @@ def sendPayload(payload):
     r = requests.post(url, auth=auth, data=json.dumps(payload))
 
     print(r.status_code, r.reason)
-    print(r.text)
 
 def getPayload():
     url="https://licenseplatevalidator.azurewebsites.net/api/lpr/wantedplates"
