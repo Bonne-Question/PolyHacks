@@ -1,8 +1,11 @@
 import base64
 import calendar
+import io
 import os
 import threading
 import time
+
+from PIL import Image
 from connector import get_connection
 from license_plate_publisher import *
 from payloads import *
@@ -25,17 +28,16 @@ IPAddr = socket.gethostbyname(hostname)
 
 def create_uri(plate):
     blob = plate["ContextImageJpg"]
-    timestamp = calendar.timegm(time.gmtime())
+
     uid = uuid.uuid1()
 
-    file_path = __file__+"/images/" + uid + ".jpg"
+    file_path = "../images/" + str(uid) + ".jpg"
 
-    uri = "http://"+IPAddr+"/images/" + uid + ".jpg"
+    uri = "http://"+IPAddr+"/images/" + str(uid) + ".jpg"
 
-    image_file = open(file_path,"w")
+    image = Image.open(io.BytesIO(base64.b64decode(blob)))
+    image.save(file_path)
 
-    image_file.write(base64.b64decode(blob))
-    image_file.close()
     return uri
 
 
@@ -79,7 +81,7 @@ if __name__ == '__main__':
             payload = license_plate_publisher()
 
             print(payload)
-
+            create_uri(payload)
             if payload["LicensePlate"] in wanted:
 
                 sendPayload(payload, create_uri(payload))
