@@ -1,5 +1,4 @@
 import base64
-import calendar
 import io
 import os
 import threading
@@ -111,8 +110,6 @@ if __name__ == '__main__':
         try:
 
             payload = license_plate_publisher()
-
-            print(payload)
 
             if payload["LicensePlate"] in wanted:
 
