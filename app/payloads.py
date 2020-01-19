@@ -5,8 +5,16 @@ from requests.auth import HTTPBasicAuth
 
 auth= HTTPBasicAuth('equipe37', 'JKPJUfnYfaxngMxb')
 
-def sendPayload(payload):
+def sendPayload(plate, context_reference_image):
     url="https://licenseplatevalidator.azurewebsites.net/api/lpr/platelocation"
+
+    payload = {
+        "LicensePlateCaptureTime": plate["LicensePlateCaptureTime"],
+        "LicensePlate": plate["LicensePlate"],
+        "Latitude": plate["Latitude"],
+        "Longitude": plate["Longitude"],
+        "ContextImageReference": context_reference_image
+    }
 
     r = requests.post(url, auth=auth, data=json.dumps(payload))
 

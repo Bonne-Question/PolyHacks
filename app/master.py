@@ -29,11 +29,17 @@ class Thread_notification(threading.Thread):
         global updated
 
         while True:
-            print("redo loop for notification_publisher", flush=True)
-            msg = notification_publisher()
 
-            if msg is not None:
-                updated = True
+            try:
+
+                print("redo loop for notification_publisher", flush=True)
+                msg = notification_publisher()
+
+                if msg is not None:
+                    updated = True
+
+            except Exception as e:
+                pass
 
 
 if __name__ == '__main__':
@@ -48,11 +54,14 @@ if __name__ == '__main__':
 
         if updated:
 
-            print("UPDATED")
+            try:
 
-            updated = False
-            wanted = getPayload()
+                print("UPDATED")
 
-            db_cur.insert()
-            db_cur.execute("INSERT INTO plates(plates_array) VALUES (%s);", [wanted])
-            dbc.commit()
+                updated = False
+                wanted = getPayload()
+                db_cur.execute("INSERT INTO plates(plates_array) VALUES (%s);", [wanted])
+                dbc.commit()
+
+            except Exception as e:
+                pass
